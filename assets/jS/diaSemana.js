@@ -2,33 +2,33 @@
 //muestre el día de la semana correspondiente (1 para "Lunes", 2 para
 //"Martes", etc.).
 
-let dia= prompt (parseFloat('Ingrese un numero para saber que día de la semana es: '));
+let dia = parseInt(prompt('Ingrese un numero para saber que día de la semana es: '));
 
 
 switch (dia) {
-    case valor1:
+    case dia = 1:
         console.log('Lunes')
-      [break;]
-    case valor2:
+    break;
+    case dia = 2:
         console.log('Martes')
-      [break;]
-      case valor3:
+    break;
+    case dia = 3:
         console.log('Miercoles')
-      [break;]
-    case valor4:
+    break;
+    case dia = 4:
         console.log('Jueves')
-      [break;]
-      case valor5:
+    break;
+    case dia = 5:
         console.log('Viernes')
-      [break;]
-    case valor6:
+    break;
+    case dia = 6:
         console.log('Sábado')
-      [break;]
-      case valor7:
+    break;
+    case dia = 7:
         console.log('Domingo')
-      [break;]
+    break;
     
     default:
-      console.log('El valor ingresado no es valido.')
-      [break;]
-  }
+    console.log('El valor ingresado no es valido.')
+    break;
+}
