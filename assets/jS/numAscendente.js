@@ -33,7 +33,9 @@ else if(num3>num1 && num3>num2){
         console.log('El orden de los números Ascendentes es: ', num1, num2, num3)
     }
 }
+else if(num1==num2 && num1==num3){
+        console.log('Los numeros ingresados son iguales.')
+    }
 else{
     console.log('Valores ingresados no válidos.')
 }
-    
