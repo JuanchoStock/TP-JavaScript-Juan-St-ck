@@ -2,9 +2,9 @@
 //en orden ascendente.
 //prompt (parseFloat('Ingrese 3 numero para descubrir el orden Ascendente'))
 
-let num1= prompt (parseFloat('Ingrese el primer Número'));
-let num2= prompt (parseFloat('Ingrese el segundo Número'));
-let num3= prompt (parseFloat('Ingrese el tercer Número'));
+let num1= parseInt(prompt('Ingrese el primer Número'));
+let num2=parseInt(prompt('Ingrese el segundo Número'));
+let num3= parseInt(prompt('Ingrese el tercer Número'));
 
 if (num1>num2 && num1>num3){
     console.log('El numero 1 ingresado es el mayor.')

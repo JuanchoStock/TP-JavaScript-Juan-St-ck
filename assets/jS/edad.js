@@ -2,7 +2,7 @@
 //rango de edad se encuentra: niño (0-12), adolescente (13-19), adulto
 //(20-59), o adulto mayor (60 o más).
 
-let edad= prompt (parseFloat('Ingrese una edad'));
+let edad= parseInt(prompt('Ingrese una edad'));
 
 if (edad>=0 && edad<=12){
     console.log('La edad es de un niño.')
