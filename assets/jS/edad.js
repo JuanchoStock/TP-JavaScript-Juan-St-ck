@@ -13,10 +13,10 @@ if (edad>=0 && edad<=12){
     else if(edad>=20 && edad<=59){
         console.log('La edad es de un Adulto.')
     }
-    else if(edad>= 60){
+    else if(edad>= 60 && edad<=115){
         console.log('La edad es de un Adulto Mayor.')
     }
     else{
-        console.log('El valor ingresado es incorrecto.')
+        console.log('El valor ingresado es incorrecto ó Excede el rango de edad.')
     }
     
