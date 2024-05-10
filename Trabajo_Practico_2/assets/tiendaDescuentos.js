@@ -12,7 +12,12 @@ let precio_uni = parseInt(prompt('Ingrese el precio unitario del articulos que l
 
 pre_total = (cant_art * precio_uni);
 
-console.log('El total a pagar es de: ', '$'+pre_total)
+if(isNaN(cant_art) || (1>cant_art)){
+    alert('El valor ingresado para los artículos no es válido ! ')
+}
+if(isNaN(precio_uni) || (1>cant_art)){
+    alert('El valor ingresado para el precio no es válido ! ')
+}
 
 switch (true) {
     case pre_total >= 20000 && cant_art >=10:
@@ -20,8 +25,12 @@ switch (true) {
         console.log('El precio total a pagar CON descuento es de: ', '$'+pre_desc)
         break;
 
-    default:
-        
+        case pre_total >= 20000 && cant_art < 10:
+        console.log('El total No tiene descuento, importe a pagar: ', '$'+ pre_total)
         break;
-}
 
+        case pre_total < 20000 && cant_art >= 10:
+        console.log('El total No tiene descuento, porque no supera los $20000 : ', 'Debe pagar $'+ pre_total)
+        break;
+
+}
