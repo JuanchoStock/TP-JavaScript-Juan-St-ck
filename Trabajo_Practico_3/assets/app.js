@@ -18,14 +18,22 @@ let menu = prompt(' - Menú de Opciones - \n 1 - Listar Tareas.\n 2 - Agregar Ta
 let lista = [];
 
 //1 Agregar una tarea.
-list.push(1);
+function agregarTareas(nomTar){
+    tareas.push(nomTar)
+    //console.log para probar
+}
 
 //2 Listar el arreglo.
-
-for (let i = 0; i < list.length; i++) {
+function listarTareas(){
+    let msj = "";
+    for (let i = 0; i < tareas.length; i++) {
     // Haciendo uso del contador "i", vamos recorriendo las posiciones del array.
-    console.log(list[i])
+    msj += tareas[i] + "\n";
+    }
+    alert(msj);
 }
+
+
 /*
 menu()
 while (n =! 0){
